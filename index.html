@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <fieldset>
+            <legend>Registration form</legend>
+       <label for="fname">Enter First Name</label>
+       <input type="text" id="fname" required name="firstname" >
+       <br><br>
+       <label for="lname">Enter Last Name</label>
+       <input type="text" id="lname" required name="Lastname"><br><br>
+       <label for="email">Enter Email:</label>
+       <input type="email" id="email" placeholder="eg:gggg@gmail.com"><br><br>
+       <label for="fname">Enter Your Password:</label>
+       <input name="pswrd"type="password" pattern="(?=.*[a-z])(?=.*[A-Z]).{8,}">
+       <!-- <br><br><label for="num">Enter number :</label><input type="number" id="num"> -->
+       <br><br><label for="num">Enter mobile number:</label><input type="tel" id="num" pattern="(?=.*[0-9]).{10}">
+       <p>Enter gender:</p>
+       <input type="radio" id="male" name="gender" value="user is male">
+       <label for="male">Male</label>
+       <input type="radio" id="female" name="gender" value="female" checked> 
+       <label for="female">Female</label>
+       <input type="radio" id="others"name="gender" value="user comes under other category"> 
+       <label for="others">Others</label>
+       <br><br>
+       <label for="26-7-2002">Date-Of-Birth</label>
+       <input type="date" id="26-7-2002" name="D-O-B" value="26/07/2002"><br><br>
+       <label for="address">Address:</label><input name="address" type="address" id="address"><br><br>
+       <label for="num">PIN CODE:</label><input name="pin code" type="num" id="num"><br><br>
+       <label for="city name">City:</label><input name="city"type="text" id="city name"><br><br>
+       <label for="nationality">Nationality:</label><input name="nationality"type="text"  id="nationality"><br><br>
+       <label for="identity">Identity Proof:</label><input type="file" multiple id="identity"><br><br>
+       <input type="reset"/>
+       <br><br><input type="submit" value="signup">
+       </fieldset>
+
+
+    </form>
+</body>
+</html>
